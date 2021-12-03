@@ -1,0 +1,23 @@
+{
+  "name": "researchpanelasia/greeter-20150728",
+  "description": "Skill check for RPA engineer recruitment",
+  "require": {
+    "php": "^7.3|^8.0",
+    "vlucas/phpdotenv": "^5.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.3",
+    "symfony/var-dumper": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "MyGreeter\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests/"
+    ]
+  },
+  "authors": []
+}
