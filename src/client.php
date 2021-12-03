@@ -9,11 +9,11 @@ class Client
         $hour = date('h');
         try {
             return match ((int)$hour) {
-                6, 11 => 'Good morning',
-                12, 17 => 'Good afternoon',
+                6, 11 => Status::MORNING(),
+                12, 17 => Status::AFTERNOON(),
             };
         } catch (\UnhandledMatchError $e) {
-            return 'Good evening';
+            return Status::EVENING();
         }
     }
 }

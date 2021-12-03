@@ -21,7 +21,7 @@ class MyGreeterClientTest extends TestCase
 
     public function testGetGreetingContent()
     {
-        $testArray = array("Good morning",   "Good afternoon", 'Good evening');
+        $testArray = \MyGreeter\Status::toArray();
         $value = $this->greeter->getGreeting();
         $this->assertContains($value, $testArray, "testArray doesn't contains value as value");
     }

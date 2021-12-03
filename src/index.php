@@ -9,5 +9,4 @@ date_default_timezone_set($_ENV['TIMEZONE']);
 
 $client = new \MyGreeter\Client();
 
-
 dd($client->getGreeting());
