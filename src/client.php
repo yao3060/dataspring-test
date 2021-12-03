@@ -4,10 +4,9 @@ namespace MyGreeter;
 
 class Client
 {
-    public function getGreeting()
+    public function getGreeting(): string
     {
         $hour = date('h');
-
         try {
             return match ((int)$hour) {
                 6, 11 => 'Good morning',
