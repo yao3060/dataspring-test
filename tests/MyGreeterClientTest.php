@@ -1,19 +1,11 @@
 <?php
-
-use PHPUnit\Framework\TestCase;
-
-$dotenv = \Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
-$dotenv->load();
-
-date_default_timezone_set($_ENV['TIMEZONE']);
-
-
 class MyGreeterClientTest extends TestCase
 {
     protected $greeter;
 
     protected function setUp(): void
     {
+        parent::setUp();
         $this->greeter = new \MyGreeter\Client();
     }
 
